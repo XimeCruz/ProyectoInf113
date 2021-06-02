@@ -1,0 +1,10 @@
+.columna {
+  float: left;
+  width: 400px;
+  height: 110px;
+}
+.sec {
+  float: right;
+  width: 900px;
+  height: 110px;
+}
