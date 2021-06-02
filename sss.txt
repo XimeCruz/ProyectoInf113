@@ -1,0 +1,45 @@
+practica un carrusel con java script 
+con 10 imagenes
+para el dia jueves 3 de 
+
+
+git
+864774
+
+comandos que se van a usar
+
+git add .   ---> añadir todos los cambios que hice    (2)
+git commit -m "añadiendo imagen"   --->es para comentar lo que hice     (3)
+git pull    ----> para iniciar   (1)
+git push    ----> es para añadir mis cambios que hice     (4)
+
+
+////lo que se añadira en el proyecto////
+-inicio
+-generos en particular
+	-formulario ala final
+-anime   -->
+
+	empesas
+	mangas
+
+-paginas al respecto
+	paginas de mangas 
+
+-foter
+	nombres
+
+
+paginas de sugerencia a ideas   ///////
+
+https://themes.3rdwavemedia.com/startup-kit/bs5/2.0/
+
+https://bootswatch.com/
+
+https://animetionjapanl.jimdofree.com/paginas-al-respecto/
+
+iconos   ////////
+https://fontawesome.com/icons?d=gallery&p=2
+
+
+
