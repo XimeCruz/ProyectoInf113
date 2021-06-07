@@ -42,4 +42,13 @@ iconos   ////////
 https://fontawesome.com/icons?d=gallery&p=2
 
 
+///////material encontrado
+
+https://getbootstrap.com/docs/4.1/examples/
+
+https://raulmoreira.com/25-recursos-gratis-para-bootstrap/
+
+https://www.websitetooltester.com/es/programas-para-crear-paginas-web/
+
+
 
