@@ -39,12 +39,12 @@
                 <form class="d-flex">
                   <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Home
+                      <a class="nav-link active" href="#">Inicio
                         <span class="visually-hidden">(current)</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
+                      <a class="nav-link" href="#">Generos</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Pricing</a>
@@ -81,7 +81,7 @@
               <img src="img/imagen3.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
             </div>
             <div class="carousel-item">
-              <img src="img/imagen2.jpg" class="d-block w-100" alt="..." width="600px" height="510px">
+              <img src="img/imagen2.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
             </div>
             <div class="carousel-item">
               <img src="img/imagen1.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
@@ -93,7 +93,7 @@
               <img src="img/imagen0.png" class="d-block w-100" alt="..." width="600px" height="590px">
             </div>
             <div class="carousel-item">
-              <img src="img/imagen6.jpg" class="d-block w-100" alt="..." width="600px" height="510px">
+              <img src="img/imagen6.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
             </div>
           </div>
         </div>
@@ -111,27 +111,21 @@
     </section>
     <section id="main"><!-- #main content and sidebar area -->
         <section id="content"><!-- #content -->
-            <article>
-                <h2><a href="#">Primer articulo Modernizr</a></h2>
-                <img src="images/flowersky.jpg" alt="flower" class="alignleft" />
-                <p align="justify"> Sin importar cuál es la opción elegida, 
-                lo primero que debemos hacer es detectar silas características de 
-                <a href="#">HTML5 </a>requeridas por su aplicación 
-                están disponibles en el navegador del usuario o no. 
-                Estas características son independientes 
-                y fáciles de identificar, pero las técnicas requeridas para hacerlo 
-                son tan diversas como las características mismas. 
-                
-                Desarrolladores deben considerar diferentes navegadores y versiones, 
-                y depender de códigos que a menudo no son para nada confiables.</p>                     
-                <p align="justify">Una pequeña librería llamada Modernizr 
-                fue desarrollada con la intención de resolver este problema. 
-                
-                Esta librería crea un objeto llamado Modernizr que ofrece propiedades 
-                para cada característica de HTML5. Estas propiedades retornan un 
-                valor booleano que será true (verdadero) o false (falso) dependiendo 
-                si la característica está disponible o no.</p>
-            </article>
+            <div class="card bg-dark text-white">
+                <img
+                  src="https://mdbootstrap.com/img/new/slides/017.jpg"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.
+                  </p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+              </div>
                     
             <article>
                 <h2><a href="#">Segundo articulo API Offline</a></h2>
@@ -238,7 +232,73 @@
         <div class="card-header">Kodomo</div>
         </div>
       </div>
-      <h3>Blogs</h3>
+      <h3>Páginas de Anime</h3>
+      <div class="card">
+        <div class="bg-image hover-overlay">
+            <img src="img/animeyt.png" class="w-100" />
+            <div
+              class="mask"
+              style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.5),
+                  rgba(91, 14, 214, 0.5) 100%
+                );
+              "
+            >
+        </div>
+        
+          </div>
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">Anime YT</h5>
+          <a href="#!" class="btn bg-light">Ir</a>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="bg-image hover-overlay">
+            <img src="img/animflv.png" class="w-100" />
+            <div
+              class="mask"
+              style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.5),
+                  rgba(91, 14, 214, 0.5) 100%
+                );
+              "
+            >
+        </div>
+        
+          </div>
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">Anime FLV</h5>
+          <a href="#!" class="btn bg-light">Ir</a>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="bg-image hover-overlay">
+            <img src="img/jkanime.png" class="w-100" />
+            <div
+              class="mask"
+              style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.5),
+                  rgba(91, 14, 214, 0.5) 100%
+                );
+              "
+            >
+        </div>
+        
+          </div>
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title">JK Anime</h5>
+          <a href="#!" class="btn bg-light">Ir</a>
+        </div>
+      </div>  
+      <br>   
       
 </aside><!-- Fin de sidebar -->
 </section>
