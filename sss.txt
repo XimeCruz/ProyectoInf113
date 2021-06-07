@@ -50,5 +50,13 @@ https://raulmoreira.com/25-recursos-gratis-para-bootstrap/
 
 https://www.websitetooltester.com/es/programas-para-crear-paginas-web/
 
+https://freefrontend.com/css-headers-footers/#footers
+
+https://mdbootstrap.com/docs/standard/getting-started/installation/
+
+https://mdbootstrap.com/freebies/
+
+https://mdbootstrap.com/docs/standard/navigation/footer/
+
 
 
