@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	background-color: #000;
+}
+
+#main {
+width: 940px;
+margin: 0 auto;
+padding-top: 30px;
+background: #000 url(images/colbg.png) repeat-y;
+overflow: hidden;
+}
+
+#content {
+float: right;
+width: 640px;
+margin-right: 30px;
+
+}
+
+#sidebar {
+float: left;
+padding-left: 20px;
+width: 220px;
+}
+
