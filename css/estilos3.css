@@ -2,11 +2,15 @@
 /* CSS Document */
 
 
+body{
+	background-color: #000;
+}
+
 #main {
 width: 940px;
 margin: 0 auto;
 padding-top: 30px;
-background: #FFF url(images/colbg.png) repeat-y;
+background: #000 url(images/colbg.png) repeat-y;
 overflow: hidden;
 }
 
@@ -14,6 +18,7 @@ overflow: hidden;
 float: right;
 width: 640px;
 margin-right: 30px;
+
 }
 
 #sidebar {
