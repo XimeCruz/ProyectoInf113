@@ -194,8 +194,3 @@ input[type="submit"] {
 .fondo {
   background: orange;
 }
-
-/*configuracion del aside*/
-.sidebar {
-  float: left;
-}

@@ -1,29 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-body{
-	background-color: #000;
+body {
+  background-color: #000;
 }
 
 #main {
-width: 1020px;
-margin: 0 auto;
-padding-top: 30px;
-background: #000 url(images/colbg.png) repeat-y;
-overflow: hidden;
+  width: 1020px;
+  margin: 0 auto;
+  padding-top: 30px;
+  background: #000 url(images/colbg.png) repeat-y;
+  overflow: hidden;
 }
 
 #content {
-float: right;
-width: 640px;
-margin-right: 30px;
-
+  float: right;
+  width: 640px;
+  margin-right: 30px;
 }
 
 #sidebar {
-float: left;
-padding-left: 20px;
-width: 250px;
+  float: left;
+  padding-left: 20px;
+  width: 250px;
 }
-
+/*boton del formulario*/
+#boton:hover {
+  color: #fffffff1 !important;
+  background: #b2b5b68a !important;
+  opacity: 0.5;
+}
