@@ -25,6 +25,29 @@
     <title>Generos</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+ 
+      function validarFormulario(evObject) {
+      evObject.preventDefault();
+      var todoCorrecto = true;
+      var correctoEmail=true;
+      var formulario = document.formularioDatos;
+      for (var i=0; i<formulario.length; i++) {
+        if(formulario[i].type =='text') {
+           if (formulario[i].value == null || formulario[i].value.length == 0 || /^\s*$/.test(formulario[i].value)){
+            alert (formulario[i].name+ ' No puede estar vacío o contener sólo espacios en blanco');
+            todoCorrecto=false;                     
+          }	
+         }     
+      }
+       if (!(/\S+@\S+\.\S+/.test(formulario[2].value))){		
+          alert ('Email no valido...');
+          correctoEmail=false;
+          }
+      if (todoCorrecto ==true && correctoEmail==true) {formulario.submit();}
+      }
+       
+      </script>
 </head>
 <body bgcolor="black">  
     <header>
@@ -178,24 +201,27 @@
             <article class="col p-3" style="background-image: url(img/fondo.gif)">
               <h2><span style="font-family: forte; font-size: 40px; text-shadow: 6px 6px 10px #5f5f5f;">ESCRIBE UN COMENTARIO</span></h2>
               <hr>
-              <form>
+
+
+
+              <form name="formularioDatos" class="class1" action="confirmmessage">
                 <div class="row mb-3">
-                  <label for="input-group-text" class="col-sm-2 col-form-label" style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Nombre</label>
+                  <label for="nombre" class="col-sm-2 col-form-label" style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Nombre</label>
                   <div class="col-sm-8">
                     <input type="text" class="form-control  bg-transparent" id="inputEmail3" placeholder="Ingrese su nombre">
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label" style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Email</label>
+                <div class="row mb-3"> 
+                  <label for="email" class="col-sm-2 col-form-label" style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Email</label>
                   <div class="col-sm-8 ">
-                    <input type="email" class="form-control  bg-transparent" id="inputEmail3" placeholder="Ingrese su correo electronico">
+                    <input type="text" class="form-control  bg-transparent" id="email" name="email" placeholder="Ingrese su correo electronico">
                   </div>
                 </div>
                 <div class="form-group row  bg-transparent">
                   <label  class="col col-form-label col-6 " style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Opinión sobre la página</label> 
                   <div class="col-10">
                     <select class="form-select bg-transparent" aria-label="Default select example" style="width: 90%;"> 
-                      <option selected>la pagina es ...</option>
+                      <option selected>La pagina es ...</option>
                       <option value="1">mala</option>
                       <option value="2">Buena</option>
                       <option value="3">Muy buena</option>
@@ -205,7 +231,7 @@
                 </div>
                 <br>
                 <div class="mb-3" style="width: 84%;">
-                  <label for="exampleFormControlTextarea1" class="form-label" style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Escribinenos un mensaje:</label>
+                  <label for="texto" class="form-label" style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Escribinenos un mensaje:</label>
                   <textarea class="form-control bg-transparent" id="exampleFormControlTextarea1" rows="3" placeholder="Escribenos..."></textarea>
                 </div>
                 <div class="row mb-3">
@@ -223,6 +249,8 @@
                   <button id="boton" type="reset" class="rounded-3 bg-transparent p-2" style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 18px; font-weight: bold;" value="limpiar">Limpiar</button>
                 </div>
               </form>
+
+              
             </article>
             </div>  
             <br>
