@@ -43,11 +43,16 @@
          }     
       }
        if (!(/\S+@\S+\.\S+/.test(formulario[2].value))){		
-          alert ('Email no valido...');
+          alert ('Email no valido');
           correctoEmail=false;
           }
-      if (todoCorrecto ==true && correctoEmail==true) {formulario.submit();}
+      if (todoCorrecto ==true && correctoEmail==true) {
+        formulario.submit();
+        alert('Formulario enviado con exito');
       }
+      }
+
+      
        
       </script>
 </head>
@@ -228,11 +233,11 @@
 
 
 
-              <form name="formularioDatos" class="class1" action="confirmmessage">
+              <form name="formularioDatos" class="class1" action="confirmmessage()">
                 <div class="row mb-3">
                   <label for="nombre" class="col-sm-2 col-form-label" style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Nombre</label>
                   <div class="col-sm-8">
-                    <input type="text" class="form-control  bg-transparent" id="inputEmail3" placeholder="Ingrese su nombre">
+                    <input type="text" class="form-control  bg-transparent" id="nombre" name="nombre" placeholder="Ingrese su nombre">
                   </div>
                 </div>
                 <div class="row mb-3"> 
@@ -242,7 +247,7 @@
                   </div>
                 </div>
                 <div class="form-group row  bg-transparent">
-                  <label  class="col col-form-label col-6 " style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Opinión sobre la página</label> 
+                  <label for="option" class="col col-form-label col-6 " style="color:#a79f9f; font-family: Bradley Hand ITC; font-size: 25px; font-weight: bold;">Opinión sobre la página</label> 
                   <div class="col-10">
                     <select class="form-select bg-transparent" aria-label="Default select example" style="width: 90%;"> 
                       <option selected>La pagina es ...</option>
