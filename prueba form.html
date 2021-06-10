@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html><head><title>VALIDACION DE FORMULARIO_103</title>
+<meta charset="utf-8">
+<style>
+body {
+	background-color:#999; 
+	font-family: Verdana;
+	} 
+label{color:#FFF; 
+	display:block; /*despliegue en bloque ordenado*/
+	padding:5px;
+	}
+</style>
+
+<script>
+ 
+function validarFormulario(evObject) {
+evObject.preventDefault();
+var todoCorrecto = true;
+var correctoEmail=true;
+var formulario = document.formularioDatos;
+for (var i=0; i<formulario.length; i++) {
+  if(formulario[i].type =='text') {
+     if (formulario[i].value == null || formulario[i].value.length == 0 || /^\s*$/.test(formulario[i].value)){
+      alert (formulario[i].name+ ' No puede estar vacío o contener sólo espacios en blanco');
+      todoCorrecto=false;                     
+	  }	
+   }     
+}
+ if (!(/\S+@\S+\.\S+/.test(formulario[2].value))){		
+		alert ('Email no valido...');
+		correctoEmail=false;
+		}
+if (todoCorrecto ==true && correctoEmail==true) {formulario.submit();}
+}
+ 
+</script>
+</head>
+<body>
+<h2>Validacion de formulario Campos vacios</h2>
+<form name ="formularioDatos" class="class1" >
+<p>Si quieres contactar con nosotros envíanos este formulario relleno:</p>
+<label for="nombre">Nombre: <input id="nombre" type="text" name="nombre" /></label>
+<label for="apellidos">Apellidos: <input id="apellidos" type="text" name="apellidos" /></label>
+<label for="email">Correo electrónico:<input id="email" type="text" name="email" /></label>
+<label><input type="submit" value="Enviar"><input type="reset" value="Cancelar"></label>
+</form>
+</body>
+</html>
+
