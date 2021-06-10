@@ -46,10 +46,14 @@ document.formularioDatos.addEventListener('submit', validarFormulario);
           }	
          }     
       }
-       if (!(/\S+@\S+\.\S+/.test(formulario[2].value))){		
-          alert ('Email no valido');
-          correctoEmail=false;
-          }
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
+   alert("La dirección de email " + valor + " es correcta.");
+   correctoEmail=true;
+  } else {
+   alert("La dirección de email es incorrecta.");
+   correctoEmail=false;
+  }
+       
       if (todoCorrecto ==true && correctoEmail==true) {
         formulario.submit();
         alert('Formulario enviado con exito');
