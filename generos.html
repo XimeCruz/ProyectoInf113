@@ -53,75 +53,88 @@
   <div class="container-fluid">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <img src="img/iconoinf113.png"/>
-      
-          <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav me-auto">
-              
-            </ul>
-            <form class="d-flex">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Inicio
-                    
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="generos.html">Generos
-                    <span class="visually-hidden">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="paginaDeAnimes.html">Anime</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="paginaDeMangas.html">Manga</a>
-                </li>
-              </ul>
-            </form>
-          </div>
-        </div>
-      </nav>
+          <div class="container-fluid">
+              <img src="img/iconoinf113.png"/>
         
-    </header>  
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav me-auto">
+                
+              </ul>
+              <div class="d-flex">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html">Inicio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="generos.html">Generos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="paginaDeAnimes.html">Anime</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="paginaDeMangas.html">Manga</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      
+  </header>   
     <section id="cabecera">
 	  
         <!--Carrucel--> 
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/imagen4.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
-            </div>
-            <div class="carousel-item">
-              <img src="img/imagen3.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
-            </div>
-            <div class="carousel-item">
-              <img src="img/imagen2.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
-            </div>
-            <div class="carousel-item">
-              <img src="img/imagen1.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
-            </div>
-            <div class="carousel-item">
-              <img src="img/imagen5.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
-            </div>
-            <div class="carousel-item">
-              <img src="img/imagen0.png" class="d-block w-100" alt="..." width="600px" height="590px">
-            </div>
-            <div class="carousel-item">
-              <img src="img/imagen6.jpg" class="d-block w-100" alt="..." width="600px" height="590px">
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+        
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+	<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/891.jpg" alt="Los Angeles" style="width: 100%; height:100%">
+	  
+	    <!---->
+	   <div class="carousel-caption d-none d-md-block">
+    <h5>WebSite s.r.l.</h5>
+    <p>Tecnologia en software</p>
+  	</div>
+	</div>
+	
+    <div class="carousel-item">
+      <img src="img/cabecera.jpg" alt="Chicago" style="width: 100%; height:100%">
+	  <!---->
+	   <div class="carousel-caption d-none d-md-block">
+    <h5>Somos los primeros</h5>
+    <p>en desarrollo de aplicaciones</p>
+  	</div>
+    </div>
+	
+    <div class="carousel-item">
+      <img src="img/showcase.jpg" alt="New York" style="width: 100%; height:100%">	  
+	   <div class="carousel-caption d-none d-md-block">
+    	<h5>Comunicate</h5>
+    	<p>con nosotros</p>
+  		</div>
+    </div>
+
+
+			 
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a> 
+</div>
+</div>
         <!--Fin de carrucel-->
         
     </section>
